@@ -24,8 +24,11 @@ example: Enter row ::: 1 or 2 or 3 -------- 1
 To place symbol on (1,2) position.
 
 ## Windows Executable
+Click [here](tic_tac_toe.exe) to go to the application file page to download manually.
 
+**OR**
 
+  Click this [**DOWNLOAD**](https://github.com/aryan-codes1/Terminal-Based-TicTacToe-Game/raw/main/tic_tac_toe.exe) button.
 
 ## Features
 * Two players can play against each other.
