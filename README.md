@@ -1,3 +1,5 @@
+![Python](https://img.shields.io/badge/Python-3.10-yellow)
+
 # Terminal-Based-TicTacToe-Game
 
 ## Introduction
