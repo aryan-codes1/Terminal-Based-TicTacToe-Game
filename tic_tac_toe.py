@@ -54,6 +54,14 @@ class TicTacToe:
     def won(self,symbol : str) -> bool:
         return self.check_row(symbol) or self.check_col(symbol) or self.check_diag(symbol)
 
+    def ai_place_easy(self,symbol : str) -> None:
+        while(1):
+            row=random.randint(0,2)
+            col=random.randint(0,2)
+            if board[row][col]==' ':
+                break
+        board[row][col]=symbol
+
     def place(self,symbol : str) -> bool:
         self.display_board()
         while(1):
@@ -66,6 +74,28 @@ class TicTacToe:
                 print("Invalid input! Enter valid choice.")
             print("===============================================\n")
         board[row-1][col-1]=symbol
+    
+    def play_with_ai(self,symbol1: str, symbol2: str) -> None:
+        for turn in range(9):
+            print("===============================================\n")
+            if turn%2==0:
+                print(f"{self.P1}'s turn")
+                self.place(symbol1)
+                if self.won(symbol1):
+                    self.display_board()
+                    print(symbol1,"Won !")
+                    break
+            elif turn%2!=0:
+                print(f"{self.P2}'s turn")
+                self.ai_place_easy(symbol2)
+                if self.won(symbol2):
+                    self.display_board()
+                    print(symbol2,"Won !")
+                    break
+        if not(self.won(symbol1)) and not(self.won(symbol2)):
+            self.display_board()
+            print("DRAW!!")
+
 
     def play(self,symbol1: str, symbol2: str) -> None:
         for turn in range(9):
@@ -90,6 +120,20 @@ class TicTacToe:
 
 if __name__ == "__main__":
     print("===============================================")
+    print("Welcome to Tic Tac Toe Game")
+    print("===============================================")
+    print("Play against AI or another player")
+    print("===============================================")
+    ai=input(" (Y/N) ")
+    if ai=='Y' or ai=='y':
+        Player1=input("Enter Player 1's Name. Press Enter for annonymous: ")
+        print("You are playing against AI")
+        print("AI is playing with symbol",p2s)
+        print("You are playing with symbol",p1s)
+        obj=TicTacToe(Player1,"AI") if Player1 else TicTacToe(Player2="AI")
+        obj.play_with_ai(p1s,p2s)
+        exit()
+    
     Player1=input("Enter Player 1's Name. Press Enter for annonymous: ")
     Player2=input("Enter Player 2's Name. Press Enter for annonymous: ")
 
