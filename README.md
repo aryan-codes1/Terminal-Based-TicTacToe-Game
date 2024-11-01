@@ -1,26 +1,33 @@
+![Python](https://img.shields.io/badge/Python-3.10-yellow)
+
 # Terminal-Based-TicTacToe-Game
-This is a simple implementation of the classic Tic-Tac-Toe game in Python, designed to be played in the terminal. This game allows two players to take turns making moves on a 3x3 grid until one player wins or the game ends in a draw.
+
 ## Introduction
+This is a simple implementation of the classic Tic-Tac-Toe game in Python, designed to be played in the terminal. This game allows two players to take turns making moves on a 3x3 grid until one player wins or the game ends in a draw.
+
 ### Getting Started
 Follow these instructions to get a copy of the game up and running on your local machine.
 
-### Prerequisites
-You need to have **Python 3** installed on your computer to run this game.
+- ***Prerequisites***
+  
+    - You need to have **Python 3** installed on your computer to run this game.
 
 ### Installation
 1. Clone this repository to your local machine using the following command:
-  > git clone https://github.com/aryan-codes1/tic_tac_toe.git
-
-2. Navigate to the project directory:
-  > cd tic_tac_toe
-
+ ```bash
+ git clone https://github.com/aryan-codes1/tic_tac_toe.git
+```
+3. Navigate to the project directory:
+  ```bash
+   cd tic_tac_toe
+```
 ## Usage
 To start the game, open your terminal and run the following command from the project directory:
  > python tic_tac_toe.py
   
-Follow the on-screen instructions to play the game. Players will take turns entering their moves by specifying the row and column where they want to place their symbol.
-example: Enter row ::: 1 or 2 or 3 -------- 1
-         Enter coloumn ::: 1 or 2 or 3 ---- 2
+Follow the on-screen instructions to play the game. Players will take turns entering their moves by specifying the row and column where they want to place their symbol.  
+***example:*** Enter row ::: 1 or 2 or 3 -------- 1  
+         Enter coloumn ::: 1 or 2 or 3 ---- 2  
 To place symbol on (1,2) position.
 
 ## Windows Executable
@@ -56,4 +63,5 @@ Created by **Aryan Gupta**.
 
 *** All Rights Reserved ***
 
-Enjoy playing and have fun!!
+
+** Enjoy playing and have fun!! **
